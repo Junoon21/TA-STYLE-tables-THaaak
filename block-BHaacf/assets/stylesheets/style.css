@@ -1,0 +1,448 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* custom styles */
+::before
+::after{
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1330px;
+    padding: 0 32px;
+    margin: 0 auto;
+    max-width:100% ;
+}
+.font-0 {
+    font-size: 0%;
+}
+.sub-container {
+    max-width: 1000px;
+    padding:0 34px;
+    margin:0 auto;
+    max-width: 100%;
+}
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family:'Roboto', sans-serif ;
+    background-color: rgb(230,230,230);
+}
+:root {
+	--orange:rgb(221,96,69);
+	--text-dark:rgb(38,45,55);
+	--text-gray:rgb(154,153,153);
+	--gray-white:rgb(226,226,228);
+	
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+/* flex */
+.strech {
+   align-items: stretch;
+}
+.text-center {
+    text-align: center;
+}
+.text-start {
+    text-align: start;
+}
+.flex {
+    display: flex;
+}
+.flex-center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+.horizontally-center {
+    justify-content: center; 
+    /* main axis, horizontal  willcome in center of page*/
+}
+.vertically-center {
+    align-content: center;
+    /* cross axix , helps to align a flex container’s lines within it when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.
+*/
+}
+.space-between {
+    justify-content: space-between;
+    /* main axis */
+}
+.align-items-center {  
+    align-items: center;
+    /* cross axis  , will bring all in a straight line format, all will be at equal level */
+}
+.justify-end {
+    justify-content:flex-end;
+}
+.grow {
+    flex: 1 1 auto;
+}
+.flex-60{
+    flex: 0 1 60%;
+}
+.flex-50 {
+    flex: 0 1 50%;
+}
+.flex-45 {
+    flex: 0 1 45%;
+}
+.flex-40 {
+    flex: 0 1 40%;
+}
+.flex-30 {
+    flex: 0 1 30%;
+}
+.flex-20 {
+    flex: 0 1 20%;
+}
+.flex-15 {
+    flex: 0 1 15%;
+}
+.flex-25 {
+    flex: 0 1 25%;
+}
+.flex-10 {
+    flex: 0 1 10%;
+}
+.flex-30 {
+    flex: 0 1 30%;
+}
+.flex-70 {
+    flex: 0 1 70%;
+}
+.flex-80 {
+    flex: 0 1 80%;
+}
+.flex-90 {
+    flex: 0 1 90%;
+}
+.flex-100 {
+    flex: 0 1 100%;
+}
+/* button */
+.btn-curve {
+    background-color: rgb(221,96,69);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 4px;
+}
+.btn {
+    background-color: rgb(221,96,69);
+    color: #fff;
+    font-size: 14px;
+    padding: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* margin */
+.padding {
+    padding: 120px 0;
+}
+.padding-top{
+    padding-top: 82px;
+}
+.padding-bottom{
+   padding-bottom: 82px;
+}
+
+/* header */
+.hero-sec {
+    background: url(../training-image-01.jpg), center no-repeat;
+    background-size: cover ;
+}
+.header {
+    background-color: rgb(256,256,256,0.4);
+    padding: 18px;
+}
+.header li {
+    margin-right: 38px;
+    font-size: 14px;
+    font-weight: 700;
+    
+}
+.active {
+    color: var(--orange);
+}
+.training {
+    font-size: 34px;
+    font-weight: 900;
+}
+.hero-sec h2 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+   
+    margin-top: 182px;
+}
+.hero-sec h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 14px;
+    /* margin-bottom: 54px; */
+}
+.hero-sec-content .btn {
+    margin-bottom: 180px;
+}
+/* program sec */
+.program-sec h3 {
+    color: var(--text-gray);
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 34px;
+}
+.program-sec h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.program-sec img {
+    margin: 14px;
+   
+}
+.col {
+    margin-right: 14px;
+    /* padding: 18px; */
+    
+}
+ .program-sec h3 {
+    color: var(--text-gray);
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+.program-sec h4 {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.program-sec a {
+    font-size: 15px;
+}
+/* member-section */
+.member-section {
+    background: url(../cta-bg.jpg) center no-repeat;
+}
+.member-section h2 {
+    color: #fff;
+    font-size: 23px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+.member-section h3 {
+color: rgb(223, 221, 221);
+margin: 8px 0;
+}
+/* classes section */
+.classes-sec h3 {
+    color: var(--text-gray);
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 34px;
+    margin-left: 14px;
+}
+.classes-sec h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.classes-sec img {
+    margin: 14px;
+   
+}
+.class h2 {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.class {
+    /* padding: 12px; */
+    box-shadow: 1px 1px 3px 1px rgb(131, 131, 129);
+    margin-bottom: 44px;
+    padding: 14px;
+}
+.classes-content {
+    margin-top: 16px;
+}
+.classes-content h4 {
+    font-size: 28px;
+    text-transform: capitalize;
+    margin-left: 14px;
+
+}
+.class-buttons {
+    margin-right: 16px;
+}
+.classes-sec article {
+    margin-left: 21px;
+    
+}
+.classes-sec article img{
+    width: 100%;
+    height: 100%;
+    margin-top: -3%;
+    
+}
+.classes-sec article a {
+    margin-left: 14px;
+    width: 20%;
+} 
+/* scheduke classes */
+.schedule {
+    background: url(../schedule-bg.jpg);
+}
+.schedule h3{
+    color: var(--text-gray);
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 34px;
+    margin-left: 14px;
+}
+.schedule h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+}
+.schedule .icon-img {
+    margin: 14px;
+   
+}
+/* trainers */
+.trainers h3{
+    color: var(--text-gray);
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 54px;
+    margin-left: 14px;
+}
+.trainers h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+}
+.trainers  .icon-img {
+    margin: 14px;
+   
+}
+/* traijner imfo */
+.trainer-info-box{
+    box-shadow: 1px 1px 6px 2px gray;
+    padding: 26px;
+    margin-right: 28px;
+
+}
+.trainer-info-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.trainer-info h3{
+    color: var(--text-gray);
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 34px;
+    margin-left: -6px;
+
+}
+.trainer-info h2 {font-size: 26px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #000;
+    
+}
+.trainer-info h4 {
+    color: var(--orange);
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.trainer-info nav i {
+    color: var(--text-dark);
+    margin-right: 12px;
+
+}
+/* map section */
+.map-sec iframe {
+    position: relative;
+    display: inline-block;
+}
+.maps-img {
+    background: url(../slide-01.jpg) center no-repeat;
+}
+.map-img .form {
+    position: absolute;
+    width: 50%;
+    background-color: #fff;
+    
+}
+.map-img i{
+    position: relative;
+    width: 50%;
+}
+.map-img input {
+   width: 100%;
+   padding: 24px;
+}
+.name {
+    margin-right: 12px;
+}
+.maps-img textarea {
+    width: 100%;
+}
